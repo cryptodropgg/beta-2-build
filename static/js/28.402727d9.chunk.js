@@ -1,0 +1,1 @@
+(this["webpackJsonp@minimal/minimal-kit-react"]=this["webpackJsonp@minimal/minimal-kit-react"]||[]).push([[28],{2494:function(i,a){}}]);
