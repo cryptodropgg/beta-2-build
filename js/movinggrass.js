@@ -7,8 +7,6 @@ let grasscanvas = document.getElementById("test"),
   grassh = window.innerHeight;
 
 const drawer = function() {
-  console.log("DRAW GRASS CANVAS"); 
-
   grassctx.fillStyle = "rgba(0, 0, 0, 0)";
   grassctx.fillRect(0, 0, grassw, grassh);
   grassctx.clearRect(0, 0, grassw,grassh);
@@ -59,7 +57,6 @@ const anim = function() {
 };
 
 for (var xx = 0; xx < 300; xx++) {
-  console.log("GRASS GENERATE");
   stack.push(anim());
 }
 
@@ -83,7 +80,6 @@ function resizeCanvas() {
   grasscanvas.height = grassh;
   stack = [];
   for (var xx = 0; xx < 300; xx++) {
-    console.log("GRASS GENERATE");
     stack.push(anim());
   }
 }

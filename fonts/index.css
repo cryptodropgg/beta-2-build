@@ -177,6 +177,22 @@ button:focus {
     width: 10rem;
     margin-top: -5rem;
   }
+
+  .hl-buy-buttons{
+    flex-direction: column !important;
+  }
+
+  .hl-buy-btn{
+    margin-top: 1rem !important;
+  }
+
+  .staking-claim-stack{
+    flex-direction: column !important;
+  }
+
+  .claim-juice-stack{
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 300px) {
@@ -247,6 +263,14 @@ button:focus {
     margin-top: -7rem;
   }
 
+  .hl-buy-buttons{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  .hl-buy-btn{
+    margin-top: 0rem !important;
+  }
 }
 
 @media (min-width: 850px) {
@@ -289,6 +313,20 @@ button:focus {
   .slotBadge{
     width: 15rem;
     margin-top: -6rem;
+  }
+
+  .staking-claim-stack{
+    flex-direction: row !important;
+    width: 100%;
+  }
+
+  .claim-juice-stack{
+    margin-top: 0rem;
+    width: 50%;
+  }
+
+  .claim-bnb-stack{
+    width: 50%;
   }
 }
 
@@ -1073,6 +1111,8 @@ button:focus {
   animation: 3s ease-in-out running infinite floating;
 }
 
+
+
 @keyframes floating-jackpot {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -1319,3 +1359,64 @@ circle#circle-blur-yellow{
 }
 /* WELCOME END */
 
+/* MINING START */
+.total-mined-box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  min-width: 10rem;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+  /* margin-left: auto; */
+}
+
+.total-mined-caption{
+  opacity: 0.6;
+  font-size: 0.8rem;
+  margin-bottom: -0.2rem;
+}
+
+.total-mined-value{
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #ffc900;
+}
+
+.total-mined-sup{
+  color: white;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.mining-snackbar{
+  position: fixed;
+  z-index: 9999;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #181926;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 4px solid #ffc900;
+}
+
+.mining-snackbar-message{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: right;
+  margin-top: -2rem;
+  margin-bottom: 0.4rem;
+}
+
+.mining-snackbar-lottie{
+  width: 12rem;
+  margin-top: -2rem;
+}
+/* MINING END */
+
+.linking:hover{
+  text-decoration: inherit;
+  color: inherit;
+}
